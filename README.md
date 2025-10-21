@@ -44,10 +44,9 @@ Created as part of my B.Sc. Cybersecurity coursework, the project aims to deepen
 
 ## Student Context
 This project was developed as a practical practice during my B.Sc. Cybersecurity 2nd year. 
-It highlights my ability to design, document, and integrate multiple network environments using Cisco Packet Tracer—key skills.
+It highlights my ability to design, document, and integrate multiple network environments using Cisco Packet Tracer—key skills. 
 
 ## Author
-
 Rohan Kolte
 B.Sc. Cybersecurity Student  
 Year: 2nd year (2025)
