@@ -1,0 +1,132 @@
+🏫 Campus-Scale Network Topology and Segmentation Project
+
+📝 Overview
+This project models a multi-department educational/research network using Cisco Packet Tracer. Key objectives are reliability, segmentation, reproducibility, and practical documentation for peer/instructor review. Multiple topologies—star, bus, ring, mesh, hybrid—demonstrate the network's scalability and departmental isolation.
+
+🖥️ Topology Highlights
+✨ Star Topology (CS Department)
+Switch: 2960-24TT
+
+Devices and IPs:
+
+🖥️ PC2: 192.168.2.1
+
+🖥️ PC3: 192.168.2.5
+
+🖥️ PC4: 192.168.2.3
+
+🖥️ PC5: 192.168.2.2
+
+🖥️ PC8: 192.168.2.4
+
+🖨️ Printer0: (connected to switch, IP as configured)
+
+🟢 Hub-and-Spoke (VC Office)
+Hub: HUB-PT
+
+Devices and IPs:
+
+🖨️ Printer1: (connected, IP as configured)
+
+💻 Laptop2: 192.168.5.2
+
+🖥️ PC7: 192.168.5.1
+
+🚏 Bus Topology (Chemistry Lab)
+Switches: 2960-24TT (sequential)
+
+Devices and IPs:
+
+🖥️ PC8: 192.168.3.1
+
+🖥️ PC9: 192.168.3.2
+
+🖥️ PC10: 192.168.3.3
+
+🖥️ PC11: 192.168.3.4
+
+🔵 Ring Topology (Research Lab)
+Switches: 2960-24TT
+
+Devices and IPs:
+
+🖥️ PC24: 192.168.4.1
+
+💻 Laptop3: 192.168.4.2
+
+💻 Laptop4: 192.168.4.3
+
+💻 Laptop5: 192.168.4.5
+
+💻 Laptop6: 192.168.4.4
+
+🖨️ Printer2: (connected, IP as configured)
+
+🟥 Mesh Topology (Computer Department)
+Switches: 2960-24TT (fully interconnected)
+
+Devices and IPs:
+
+🖥️ PC0: 192.168.1.1
+
+💻 Laptop0: 192.168.1.2
+
+🖥️ PC1: 192.168.1.3
+
+💻 Laptop1: 192.168.1.4
+
+🖼️ Project Gallery
+![Mesh Topology](Screenshot-2025-10-21-034Screenshot-2025-10-21-034Screenshot-2025-10-21-034Screenshot-2025-10-21-034Screenshot-2025-10-21-034Screenshot-2025-10-21-033️ Implementation Notes
+
+Configured on Cisco Packet Tracer 9.0.
+
+Segmentation matches real department/lab boundaries using custom topologies and subnets.
+
+IP scheme: 192.168.[department/lab].[device] (see device lists above).
+
+Focused on reproducibility: setup steps, testing, and documentation.
+
+✅ Test Matrix
+-------------------------------------------------------------------------------------
+|Topology	|🟢 Ping Test	|🛡️ Segment Isolation |🔄 Resilience	      |🖨️ Printer/DHCP|
+-------------------------------------------------------------------------------------
+|Star	    |✅	          |✅	                |⚠️ |(switch)	      |Yes            |
+|Hub	    |✅	          |N/A	                |⚠️ |(hub)	          |Yes            |
+|Bus	    |✅	          |✅	                |⚠️ |(single failure) |None           |
+|Ring	    |✅	          |✅	                |✅ |(self-healing)  |Yes            |
+|Mesh	    |✅	          |✅	                |✅ |(redundancy)    |None           |
+------------------------------------------------------------------------------------
+✅ Fully supported/tested
+
+⚠️ Partially supported or single-point vulnerability
+
+N/A Not segmented
+
+🧩 Troubleshooting Checklist
+Use Packet Tracer’s ipconfig to verify device IPs.
+
+Ping between endpoints for connectivity/isolation.
+
+Simulate cable/switch failures—observe mesh and ring recovery.
+
+Review VLAN/ACL settings for extended security (if configured).
+
+Confirm printer/DHCP allocation meets requirements.
+
+📈 Conclusions
+Achieved clear logical and physical separation per department.
+
+Mesh/ring topologies enable self-healing and redundancy.
+
+Documentation allows reproducible deployment for education, review, or extension.
+
+🏁 How To Reproduce
+Download .pkt file (provided separately).
+
+Open in Cisco Packet Tracer (v9.0+).
+
+Review each segment in project images and device/IP lists.
+
+Run tests (ping, unplug cables, check interfaces).
+
+Reference this documentation for setup/context.
